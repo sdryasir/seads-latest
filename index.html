@@ -15,10 +15,127 @@
     <title>SEADS</title>
   </head>
   <body>
+    <header class="main-navbar frosten_bg" id="headerSect">
+      <div class="container">
+        <div class="main-navbar-inner">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">logo</a>
+              <button class="navbar-toggler menu" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"
+                onclick="this.classList.toggle('opened'); this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                id="navToggler">
+                <svg width="100" height="100" viewBox="0 0 100 100">
+                  <path class="line line1 line4"
+                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path class="line line3 line4"
+                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">who we are</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      our services <i class="bi bi-caret-down-fill"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      our expertise <i class="bi bi-caret-down-fill"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      technology solutions <i class="bi bi-caret-down-fill"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      blogs <i class="bi bi-caret-down-fill"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">news</a>
+                  </li>
+                </ul>
+                <a class="nav_btn theme-btn primary-btn" aria-current="page" href="#">who we are</a>
+              </div>
+            </div>
+          </nav>
+        </div><!-- /.main-navbar-inner -->
+      </div><!-- /.container -->
+    </header><!-- /.main-navbar -->
 
     <main>
 
+      <section class="hero" id="heroSect">
 
+        <div class="container_partial d_flex-center">
+          <figcaption class="hero_desc-sect" data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="hero_heading">Allshore Talent
+              <br>
+              <span>Locally</span>
+              <strong>Global</strong>
+            </h2>
+  
+            <p class="hero_desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, blanditiis id. Nemo ad
+              similique molestias. Id nulla nam dolorum dignissimos, ex odit, nesciunt consequatur sequi at </p>
+  
+            <div class="btn_wrapper">
+  
+              <a href="#" class="theme-btn primary-btn">oru services</a>
+              <a href="#" class="theme-btn primary-btn-bordred">our expertise</a>
+  
+            </div><!-- /.btn_wrapper -->
+          </figcaption>
+  
+          <figure class="hero_img-sect" data-aos="fade-left" data-aos-duration="1000">
+            <img src="./assets/images/hero_img.png" alt="">
+          </figure>
+        </div>
+  
+      </section><!-- /.hero -->
 
       <div class="key-highlights-wrapper section-space">
         <div class="container">
@@ -319,6 +436,69 @@
 
       
     </main>
+
+    <footer class="container">
+      <div class="footer_inner">
+        <h2 class="sect_heading">Ready to Hire the Right Talent?</h2>
+        <div class="footer_list-sect d_flex-align">
+          <aside class="d_flex-align">
+            <ul class="footer_list list_bold">
+              <li><a href="javascript:void(0)" class="footer_item">Home</a></li>
+              <li><a href="javascript:void(0)" class="footer_item">Who We Are</a></li>
+              <li><a href="javascript:void(0)" class="footer_item">Contact Us</a></li>
+            </ul>
+            <ul class="footer_list">
+              <li><a href="javascript:void(0)" class="footer_item">Our Services</a></li>
+              <li><a href="javascript:void(0)" class="footer_item">Onshoring</a></li>
+              <li><a href="javascript:void(0)" class="footer_item">Offshoring</a></li>
+              <li><a href="javascript:void(0)" class="footer_item">Nearshoring</a></li>
+            </ul>
+            <ul class="footer_list">
+              <li><a href="javascript:void(0)" class="footer_item">Our Expertise</a></li>
+              <li><a href="javascript:void(0)" class="footer_item">Developers</a></li>
+              <li><a href="javascript:void(0)" class="footer_item">Designers</a></li>
+              <li><a href="javascript:void(0)" class="footer_item">QA Testers</a></li>
+              <li><a href="javascript:void(0)" class="footer_item">Project Managers</a></li>
+              <li><a href="javascript:void(0)" class="footer_item">Marketing</a></li>
+              <li><a href="javascript:void(0)" class="footer_item">Web Accessibility</a></li>
+            </ul>
+            <ul class="footer_list">
+              <li><a href="javascript:void(0)" class="footer_item">ADA Compliance</a></li>
+              <li><a href="javascript:void(0)" class="footer_item">Co-pilot CTO</a></li>
+              <li><a href="javascript:void(0)" class="footer_item">QA</a></li>
+              <li><a href="javascript:void(0)" class="footer_item">Cybersecurity</a></li>
+              <li><a href="javascript:void(0)" class="footer_item">Cloud Management</a></li>
+            </ul>
+          </aside>
+  
+          <article>
+  
+            <h5>About Allshore</h3>
+  
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis eligendi iure veritatis voluptatum
+                nobis aperiam, recusandae </p>
+  
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error reiciendis vel magnam soluta itaque quasi
+                voluptatibus porro sint! Ducimus ab libero repudiandae qui blanditiis, quo cum sed nihil excepturi facere
+                asperiores quam optio repellendus illo ea? Facere est iste sit.</p>
+              <button class="theme-btn btn_white-bg">get in touch</button>
+          </article>
+  
+          <ul class="social_media-list d_flex-align">
+            <li><a href="javascript:void(0)"><i class="bi bi-linkedin"></i></a></li>
+            <li><a href="javascript:void(0)"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="javascript:void(0)"><i class="bi bi-whatsapp"></i></a></li>
+          </ul>
+  
+          <div class="copyright_wrapper d_flex-align">
+            <h2>logo</h2>
+  
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div><!-- /.copyright_wrapper -->
+  
+        </div><!-- /.footer_list-sect -->
+      </div><!-- /.footer_inner -->
+    </footer>
 
     <!-- <h1>Hello, SEADS</h1>
     <a href="#" class="theme-btn primary-btn-bordred">Contact Us</a>
