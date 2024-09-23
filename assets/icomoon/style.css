@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?slnem2');
-  src:  url('fonts/icomoon.eot?slnem2#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?slnem2') format('truetype'),
-    url('fonts/icomoon.woff?slnem2') format('woff'),
-    url('fonts/icomoon.svg?slnem2#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?56rc3c');
+  src:  url('fonts/icomoon.eot?56rc3c#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?56rc3c') format('truetype'),
+    url('fonts/icomoon.woff?56rc3c') format('woff'),
+    url('fonts/icomoon.svg?56rc3c#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,45 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-angle-down:before {
-  content: "\e900";
-}
-.icon-arrow:before {
-  content: "\e901";
-}
-.icon-boxes:before {
+.icon-home3:before {
   content: "\e902";
 }
-.icon-briefcase:before {
-  content: "\e903";
+.icon-users:before {
+  content: "\e972";
 }
-.icon-calendar:before {
-  content: "\e904";
-}
-.icon-certificate:before {
-  content: "\e905";
-}
-.icon-document:before {
-  content: "\e906";
-}
-.icon-facebook:before {
-  content: "\e907";
-}
-.icon-instagram:before {
-  content: "\e908";
-}
-.icon-linkedin:before {
-  content: "\e909";
-}
-.icon-people:before {
-  content: "\e90a";
-}
-.icon-people-document:before {
-  content: "\e90b";
-}
-.icon-person:before {
-  content: "\e90c";
-}
-.icon-stamp:before {
-  content: "\e90d";
+.icon-arrow-right2:before {
+  content: "\ea3c";
 }
