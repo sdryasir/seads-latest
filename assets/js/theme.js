@@ -34,3 +34,16 @@ const navToggler = document.getElementById('navToggler');
     navbarCollapse.addEventListener('shown.bs.collapse', function () {
         document.body.style.overflow = 'hidden';
     });
+
+
+    //swiper
+
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 4,
+        autoplay: true,
+        speed: 1000,
+        spaceBetween: 30,
+      });
