@@ -492,6 +492,9 @@
     // laiba fiaz sec end
 
 //laiba sec start
+// our-clinet
+
+
     // reviews-wrapper
     .reviews-wrapper{
       .reviews-inner{
@@ -575,7 +578,70 @@
         }
       }
     //   jazib-iqbal sec-end
+    // next-page
+// who we are..about.html
+// laiba sec-start
+// mission-vision-wrapper
 
+.mission-vision-wrapper{
+  .mission-vision-inner{
+    h2{
+      text-align: left
+    }
+    .mission-heading{
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: $color_theme;
+            font: {
+              size: 1.5rem; 
+             }
+        }
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+  }
+  p{
+    margin-bottom: 2rem;
+  }
+}
+// candidate-wrapper
+.candidate-wrapper{
+  .candidate-inner{
+    background-color: $color-green;
+    border-radius:calc(#{$radious-g} * 3);
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .candidate-right-col{
+      padding: 5rem;
+      h2{
+        font-size: 3.5rem;
+      
+
+      }
+     
+    }
+    .cand-fill-form {
+      display: flex;
+      flex-direction: column; 
+      
+      
+      input {
+        height: 4rem;
+        width: 100%; 
+        box-sizing: border-box; 
+      }
+    }
+      }
+    p{
+      margin-bottom: 1rem;
+        }
+  }
 
 
 

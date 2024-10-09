@@ -13175,6 +13175,55 @@ footer p {
   margin-top: 1rem;
 }
 
+.mission-vision-wrapper .mission-vision-inner h2, .mission-vision-wrapper .mission-vision-inner .h2 {
+  text-align: left;
+}
+.mission-vision-wrapper .mission-vision-inner .mission-heading {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #433B89;
+  font-size: 1.5rem;
+}
+.mission-vision-wrapper .mission-vision-inner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mission-vision-wrapper p {
+  margin-bottom: 2rem;
+}
+
+.candidate-wrapper .candidate-inner {
+  background-color: #58dbbf;
+  border-radius: calc(calc(0.25rem + 0.1vw) * 3);
+  overflow: hidden;
+}
+.candidate-wrapper .candidate-inner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.candidate-wrapper .candidate-inner .candidate-right-col {
+  padding: 5rem;
+}
+.candidate-wrapper .candidate-inner .candidate-right-col h2, .candidate-wrapper .candidate-inner .candidate-right-col .h2 {
+  font-size: 3.5rem;
+}
+.candidate-wrapper .candidate-inner .cand-fill-form {
+  display: flex;
+  flex-direction: column;
+}
+.candidate-wrapper .candidate-inner .cand-fill-form input {
+  height: 4rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.candidate-wrapper p {
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 991px) {
   .hero {
     gap: 1rem;

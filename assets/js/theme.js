@@ -42,8 +42,26 @@ const navToggler = document.getElementById('navToggler');
         // Optional parameters
         direction: 'horizontal',
         loop: true,
-        slidesPerView: 4,
+        slidesPerView: 1,
         autoplay: true,
         speed: 1000,
         spaceBetween: 30,
+        breakpoints: {
+            420:{
+                slidesPerView: 1,
+            },
+            576:{
+                slidesPerView: 2,
+            },
+
+            768: {
+                slidesPerView: 3,
+            },
+            991:{
+                slidesPerView: 4,
+            }
+
+
+        }
+            
       });
