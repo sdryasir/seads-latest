@@ -497,9 +497,7 @@
 
     // reviews-wrapper
     .reviews-wrapper{
-      .reviews-inner{
-
-      }
+      
       .client-card{
         border: 1px solid $color-dark-grey;
         padding: 2rem;
@@ -642,6 +640,155 @@
       margin-bottom: 1rem;
         }
   }
+
+  // marque
+  //done by laiba
+  .marque-wrapper{
+    position: relative;
+    .marque-col-left{
+        position: relative;
+    
+        figure{
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            aspect-ratio: 5/5;
+            background-color: gray;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: relative;
+                z-index: 1;
+            }
+            
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            background-color:black;
+            z-index: -1;
+            inset: 0;
+            transform: translate(10px, 10px);
+            border-radius: 10px;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color:white;
+            z-index: 0;
+            inset: 0;
+            transform: translate(5px, 5px);
+            border-radius: 10px;
+           
+        }
+    }
+    
+    .marque-col-right{
+        padding: 1rem 1.5rem 20rem 1.5rem;
+        width: 100%;
+        height: 100%;
+        .marque-col-right-description {
+            border-bottom: 1px solid grey;
+            h3{
+                font : {
+                    size:2rem ;
+                    weight:600 ;
+                }
+                margin-bottom: 1rem;
+                
+            }
+            small{
+                font : {
+                    size: 1rem;
+                }
+                margin-bottom: 1rem;
+                display: inline-block;
+            }
+        }
+    
+    }
+    .marque-col-right-bottom-heading{
+        font : {
+        size: 2rem;
+        weight:600;
+        }
+
+    }
+}
+    .marquee-content {
+        display: flex;
+        gap: 1rem;
+        width: max-content;
+        margin-top: -300px;
+       
+    }
+
+    .marquee-item {
+        position: relative;
+        margin: 0;
+        img {
+            width: 180px;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+
+          
+        }
+
+
+        .caption{
+            transform: translateY(-100%);
+            width: 100%;
+            transition: all .4s linear;
+            opacity:0;
+            text-align: center;
+            text-transform: capitalize;
+            font-weight: bold;
+            
+         }
+
+        &::after{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color:white ;
+            transform: translate(5px, 5px);
+            border-radius: 10px;
+            z-index: -1;
+            transition: all .4s linear;
+         }
+        &::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color:black ;
+            transform: translate(10px, 10px);
+            border-radius: 10px;
+            z-index: -2;
+            transition: all .4s linear;
+         }
+         &:hover::after, &:hover::before {
+            height: calc(100% + 2rem);
+        }
+             &:hover .caption{
+            transform: translateY(0);
+            opacity: 1;            
+         }  
+         
+         
+        
+  
+    }
+
 
 
 

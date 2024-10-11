@@ -65,3 +65,31 @@ const navToggler = document.getElementById('navToggler');
         }
             
       });
+
+      //maqrue
+      let marqueeContent = document.querySelector('.marquee-content');
+
+let cloneContent = marqueeContent.innerHTML; // Clone the content
+
+marqueeContent.innerHTML += cloneContent; // Append the cloned content to the original
+
+let contentWidth = marqueeContent.scrollWidth / 2; // Adjust for the cloned content
+
+// Animate the marquee
+let marqueeAnim = gsap.to(marqueeContent, {
+  x: -(contentWidth), 
+  duration: 30, 
+  ease: 'linear',
+  repeat:-1, 
+  paused: false,
+});
+
+// Pause the marquee on hover
+marqueeContent.addEventListener('mouseover', () => {
+  marqueeAnim.pause();
+});
+
+// Resume the marquee on mouse leave
+marqueeContent.addEventListener('mouseleave', () => {
+  marqueeAnim.resume();
+});
