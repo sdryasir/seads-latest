@@ -13,6 +13,11 @@
     left: 0;
     width: 100%;
     z-index: 100;
+    .web-logo{
+      height: 2.5rem;
+      width: auto;
+    }
+  
   }
   
   
@@ -72,7 +77,7 @@
     }
   
     .nav-item {
-      padding: 1rem;
+      padding: 0.5rem;
       white-space: nowrap;
       .nav-link{
         font-size: calc(1rem + .01vw);
@@ -122,12 +127,7 @@
     stroke-dasharray: 1 60;
     stroke-dashoffset: -30;
   }
-  
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+ 
   //styling of hero sect
 .hero{
     // padding: 10vh 12px;
@@ -143,6 +143,11 @@
   .hero_img-sect {
     // width: 40%;
     height: fit-content;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   
   .hero_desc-sect {
@@ -194,7 +199,8 @@
         display: flex;
         gap: 1rem;
         .number-card-padding{
-            padding: 2.875em 1.5em;
+            height: 200px;
+            padding: 2em 1.5rem;
             background-color: lighten($color-dark-grey, 50%);
             flex: 1;
             border-radius:$radious-g;
@@ -263,7 +269,7 @@
             }
             p{
                 margin-bottom: 1.5rem;
-                color:$color-dark-grey;
+                color:$color_black;
             }
             a{
                 position: absolute;
@@ -292,6 +298,7 @@
 // why-choose-us-wrapper
 
 .why-choose-us-wrapper{
+  background-color: $color_light-gray;
     .why-choose-card{
         color:$color_theme;
         text-align: center;
@@ -311,8 +318,7 @@
 
         p{
             font: {
-                size: 0.8rem;
-                weight: 600;
+                size:1rem;
             }
             color: $color_black;
         }
@@ -396,7 +402,7 @@
     .services{
        
         strong{
-            color:$color-green;
+            color:$color_primary;
             font: {
                 size: 1.3rem;
             }
@@ -497,6 +503,7 @@
 
     // reviews-wrapper
     .reviews-wrapper{
+      background-color: $color_light-gray;
       
       .client-card{
         border: 1px solid $color-dark-grey;
@@ -543,7 +550,7 @@
       
         p {
           text-align: justify;
-          color: lighten($color: $color_black, $amount: 45%);
+          color: $color_white;
         }
       }
       
@@ -618,7 +625,7 @@
     .candidate-right-col{
       padding: 5rem;
       h2{
-        font-size: 3.5rem;
+        font-size: calc(2rem + 1.5vw);
       
 
       }
@@ -643,151 +650,205 @@
 
   // marque
   //done by laiba
-  .marque-wrapper{
+  .marque-wrapper {
     position: relative;
-    .marque-col-left{
-        position: relative;
-    
-        figure{
-            position: relative;
-            border-radius: 10px;
-            overflow: hidden;
-            aspect-ratio: 5/5;
-            background-color: gray;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                position: relative;
-                z-index: 1;
-            }
-            
-        }
-        &::before{
-            position: absolute;
-            content: "";
-            background-color:black;
-            z-index: -1;
-            inset: 0;
-            transform: translate(10px, 10px);
-            border-radius: 10px;
-        }
-        &::after{
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 100%;
-            background-color:white;
-            z-index: 0;
-            inset: 0;
-            transform: translate(5px, 5px);
-            border-radius: 10px;
-           
-        }
-    }
-    
-    .marque-col-right{
-        padding: 1rem 1.5rem 20rem 1.5rem;
-        width: 100%;
-        height: 100%;
-        .marque-col-right-description {
-            border-bottom: 1px solid grey;
-            h3{
-                font : {
-                    size:2rem ;
-                    weight:600 ;
-                }
-                margin-bottom: 1rem;
-                
-            }
-            small{
-                font : {
-                    size: 1rem;
-                }
-                margin-bottom: 1rem;
-                display: inline-block;
-            }
-        }
-    
-    }
-    .marque-col-right-bottom-heading{
-        font : {
-        size: 2rem;
-        weight:600;
-        }
-
-    }
-}
-    .marquee-content {
-        display: flex;
-        gap: 1rem;
-        width: max-content;
-        margin-top: -300px;
-       
-    }
-
-    .marquee-item {
-        position: relative;
-        margin: 0;
-        img {
-            width: 180px;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 10px;
-
-          
-        }
-
-
-        .caption{
-            transform: translateY(-100%);
-            width: 100%;
-            transition: all .4s linear;
-            opacity:0;
-            text-align: center;
-            text-transform: capitalize;
-            font-weight: bold;
-            
-         }
-
-        &::after{
-            position: absolute;
-            content: "";
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color:white ;
-            transform: translate(5px, 5px);
-            border-radius: 10px;
-            z-index: -1;
-            transition: all .4s linear;
-         }
-        &::before{
-            position: absolute;
-            content: "";
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color:black ;
-            transform: translate(10px, 10px);
-            border-radius: 10px;
-            z-index: -2;
-            transition: all .4s linear;
-         }
-         &:hover::after, &:hover::before {
-            height: calc(100% + 2rem);
-        }
-             &:hover .caption{
-            transform: translateY(0);
-            opacity: 1;            
-         }  
-         
-         
-        
   
+    .col-left {
+      figure {
+        aspect-ratio: 4 / 4;
+        position: relative;
+        background-color:$color-dark-grey;
+        border-radius: 10px;
+        z-index: 10;
+  
+        &::before {
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-color:$color_black;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: -5;
+          transform: translate(10px, 10px);
+          border-radius: 10px;
+          transition: 0.5s linear all;
+        }
+  
+        &::after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-color:$color_white;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 0;
+          transform: translate(5px, 5px);
+          border-radius: 10px;
+          transition: 0.5s linear all;
+        }
+      }
+  
+      img {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 10px;
+      }
     }
+  
+    .marque-col-right {
+      padding:0 2rem;
+      padding-bottom: 13rem;
+
+      .marque-description {
+        border-bottom: 1px solid $color_black;
+  
+        h2 {
+          margin-bottom: 2rem;
+        }
+  
+        span {
+          display: inline-block;
+          margin-bottom: 0.5rem;
+        }
+        p{
+          margin-bottom: 1rem;
+        }
+      }
+  
+      .marque-bottom-heading {
+        span {
+          padding-top: 2rem;
+          display: inline-block;
+          font-weight: 600;
+          font-size: 1.9rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+  
+  .slider-wrapper {
+    width: 100%;
+    height:$gall-item-height;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    .slider-list {
+      display: flex;
+      gap: 1rem;
+      min-width: calc(#{$gall-item-width} * #{$gall-item-quantity});
+      position: relative;
+  
+      .gall-itme {
+        width: $gall-item-width;
+        height:$gall-item-height;
+        position: absolute;
+        left: 100%;
+        animation: sliderMove 10s linear infinite;
+        animation-delay: calc((10s / #{$gall-item-quantity}) * (var(--item-position) - 1));
+  
+        &::before {
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-color: $color_black;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: -5;
+          transform: translate(10px, 10px);
+          border-radius: 10px;
+          transition: 0.5s linear all;
+        }
+  
+        &::after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-color:$color_white;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 0;
+          transform: translate(5px, 5px);
+          border-radius: 10px;
+          transition: .5s linear all;
+        }
+  
+        &:hover {
+         border: 1px solid $color_black;
+         height: calc(#{$gall-item-height} + 2rem);
+         border-radius: 10px;
+         transition: .5s linear all;
+
+  
+          figcaption  {
+           strong{
+            transform: translateY(0);
+            position: relative;
+            z-index: 50;
+           }
+          }
+  
+          &::before,
+          &::after {
+            overflow: hidden;
+          }
+        }
+  
+        figure {
+          width: 100%;
+          height: 100%;
+        }
+  
+        img {
+          width: 100%;
+          height:$gall-item-height;
+          object-fit: cover;
+          position: relative;
+          z-index: 1;
+          border-radius: 10px;
+          overflow: hidden;
+        }
+  
+        figcaption {
+
+          strong {
+            transform: translateY(-100%);
+            transition: 1s linear all;
+            text-align: center;
+          }
+        }
+      }
+    }
+    &:hover .gall-itme{
+      animation-play-state: paused;
+    }
+  }
+  
+  @keyframes sliderMove {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: calc(#{$gall-item-width} * -1);
+    }
+  }
+  
+
+ 
+
+
+
+ 
 
 
 

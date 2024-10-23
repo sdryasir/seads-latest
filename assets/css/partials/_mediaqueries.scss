@@ -74,9 +74,7 @@
 //laiba sec start
  // reviews-wrapper
  .reviews-wrapper{
-  .reviews-inner{
-
-  }
+ 
   .client-card{
     margin-bottom: 1rem;
    
@@ -98,14 +96,27 @@
     }
   }
 
+
+  // marque
+  //done by laiba
+  .marque-wrapper {
+    .marque-col-right {
+      .marque-description {
+        padding-top:2rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
     //styling of header sect
+    //styling of header sect
+.main-navbar {
+  background-color: $color_light-gray;
+}
     .navbar-nav {
       width: 100%;
       text-align: left;
-  
       .nav-item{
         width: 100%;
       }
@@ -124,6 +135,13 @@
   
     .nav_btn{
       margin-top: calc(1rem + 1vw)!important;
+    }
+    //styling of hero section
+    .hero{
+      min-height:85vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   
     //styling of footer setion
@@ -144,6 +162,31 @@
     .scrollNone{
       overflow-y: none;
     }
+// about.html
+    // candidate-wrapper
+    .candidate-wrapper{
+      .candidate-inner{
+       
+       
+        .candidate-right-col{
+          padding: 2rem;
+        }
+          }
+      }
+  }
+  @media (max-width:480px){
+
+    .logo-full{
+      display: none;
+
+    }
+  }
+  @media (min-width:480px){
+    .logo-ico{
+      display: none;
+
+    }
+
   }
   
   

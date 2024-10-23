@@ -38,7 +38,7 @@ const navToggler = document.getElementById('navToggler');
 
     //swiper
 
-    const swiper = new Swiper('.swiper', {
+    const swiperAutoplay = new Swiper('.swiper-autoplay', {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
@@ -65,6 +65,86 @@ const navToggler = document.getElementById('navToggler');
         }
             
       });
+
+    //   swiper-2-keyhighlights
+    const ourNumbers = new Swiper('.key-highlights', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: false,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          420: {
+            slidesPerView: 1,
+          },
+          576: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          991: {
+            slidesPerView: 5,
+          }
+        }
+     });
+// swiper-3-our-services-1
+var ourServices1 = new Swiper(".our-services-1", {
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 1,  // Show 3 slides at once
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    420: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    991: {
+      slidesPerView: 3,
+    }
+  }
+});
+// swiper-3-our-services-2
+var ourServices1 = new Swiper(".our-services-2", {
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 1,  // Show 3 slides at once
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    420: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    991: {
+      slidesPerView: 3,
+    }
+  }
+});
+
+
 
       //maqrue
       let marqueeContent = document.querySelector('.marquee-content');

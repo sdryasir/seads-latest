@@ -1,5 +1,5 @@
-$color_theme: #433B89;
-$color_primary: #6B71B5;
+$color_theme:#433a89;
+$color_primary:#7275f6;
 $color_light-gray: #f8f8f8;
 $color-dark-grey:#6c7386;
 $color_white: #ffffff;
@@ -7,8 +7,13 @@ $color_black: #2a2a2a;
 $color-green:#58dbbf;
 
 //work by jazib
-$purple: #3d3b90;
+// $purple: #3d3b90;
 //work end
+
+$gall-item-width: 200px;
+$gall-item-height: 200px;
+
+$gall-item-quantity: 10;
 
 
 
@@ -158,15 +163,11 @@ ul {
 .sec_space {
     margin: 4rem auto;
 }
-
-
 .sect_heading {
     font-size: calc(2rem + .5vw);
     font-weight: 600;
     text-transform: capitalize;
 }
-
-
 .footer_list {
     li:first-child {
         .footer_item {
@@ -182,8 +183,6 @@ ul {
         padding: .25rem .5rem;
 
     }
-    
-
 }
 
 .list_bold{
@@ -221,8 +220,11 @@ ul {
     width: 100%;
 
     p{
-        color: lighten($color: $color_black, $amount: 45%);
+        color: $color_white;
     }
 }
 
+p{
+    text-wrap: pretty;
+}
 //work end
